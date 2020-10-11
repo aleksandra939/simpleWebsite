@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #d4d4d3;
+  height: 100%;
+}
+
+.contact {
+  position: absolute;
+  top:10%;
+}
+.contact h2 {
+
+  font-size: 30px;
+  color: #000;
+}
+/* Navigation I DONT KNOW HOW TO CENTER THE CONTENT. I did it with padding.*/
+.navbar nav{
+  display: block;
+  height: 40px;
+  width: 100%;
+  background-color: #555251;
+  position: fixed;
+}
+/* If I put it on the right side with float the items change places. Home is at the end. */
+.navbar nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 5PX 30px;
+  font-weight: 400;
+}
+
+.navbar nav a:hover {
+  background: #fff;
+  color: #000;
+  height: 30px;
+}
+
+
+/* First Part */
+
+.row1.belgrade {
+  position: relative;
+  z-index: -1;
+  background-image: url(/images/img1.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* I DONT KNOW HOW TO CENTER THIS
+I did it with relative, absolute position and top(50%), I also used transform-translate(-50%)*/
+.row1.belgrade h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.row1.belgrade h1 span.first {
+  background-color: #555251;
+  color:#fff;
+  padding-left: 20px;
+}
+.row1.belgrade h1 span.second {
+  background-color:#fff;
+  color: #555251;
+}
+section {
+  position: relative;
+}
+
+.text1 h2 {
+  position: absolute;
+  top: 5%;
+  left:50%;
+  transform: translateX(-50%);
+
+  color: #555251;
+  font-size: 35px;
+}
+
+ .text1 p{
+  box-sizing: border-box;
+  width:100%;
+  height: 300px;
+  padding:  70px 35px 0 35px;
+}
+/* Second Part
+Solution for this one is also absolute and relative*/
+
+.container.history {
+  position: relative;
+  z-index: -1;
+  background-image: url(/images/img2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  margin-top: 50px;}
+
+
+.container.history h2 {
+  color: #fff;
+  font-size: 35px;
+  position: absolute;
+  top:40%;
+  transform: translateY(-40%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* BTN is not working */
+.btn {
+  position: absolute;
+  top:55%;
+  transform: translateY(-55%);
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 30px;
+  width: 100px;
+  background-color: #555251;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-top: 2px;
+}
+.btn:active {
+  background-color: #fff;
+  color: #000;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* Third Part */
+
+.container.night {
+  position: relative;
+  z-index: -1;
+  background-image: url(/images/img32.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+.container.night h2 {
+  position: absolute;
+  top:30%;
+  transform: translateY(-30%);
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 35px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.row i {
+  font-size: 30px;
+  padding-left: 46%;
+  padding-bottom: 15px;
+}
+.row h3 {
+  text-align: center;
+  padding-bottom: 35px;
+  font-size: 25px;
+}
+/* I aligned text here with padding */
+footer {
+  display: block;
+  background: #555251;
+  color:#fff;
+  text-align: center;
+  padding-top: 10px;
+  height: 40px;
+  font-size: 20px;
+}
+
+@media(max-width:992px) {
+  .row1.belgrade h1 {
+    right: 10%;
+    font-size: 50px;
+  }
+  .text1 p{
+   font-size: 0.9rem;
+ }
+ .row i {
+   padding-left: 0;
+   font-size: 30px;
+ }
+ .row h3 {
+   text-align: left;
+   padding-bottom: 35px;
+   font-size: 25px;
+ }
+}
+@media(max-width:768px) {
+  .row1.belgrade h1 {
+    right: 11%;
+    font-size: 40px;
+  }
+
+  section {
+    position: relative;
+  }
+
+  .text1 h2 {
+    position: absolute;
+    top: 5%;
+    left:50%;
+    transform: translateX(-50%);
+    color: #555251;
+    font-size: 25px;
+  }
+
+   .text1 p{
+    box-sizing: border-box;
+    width:100%;
+    height: 300px;
+    padding:  60px 50px 0 35px;
+    font-size: 0.8rem;
+
+  }
+  /* Second Part
+  Solution for this one is also absolute and relative*/
+
+
+  .container.history h2 {
+    font-size: 25px;
+  }
+
+  /* Third Part */
+
+
+  .container.night h2 {
+    font-size: 25px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width:576px) {
+
+  .navbar nav a {
+    font-size: 15px;
+    padding: 7PX 5px;
+  }
+  /* position: absolute;
+  background-attachment: none;
+  top: 20%;
+  transform: translateY(-20%);
+  left: 20%;
+  transform: translate(-20%);
+  font-size: 20px; */
+
+  .row1.belgrade h1 {
+    background-attachment: none;
+    width: 100%;
+
+    right: 0;
+    font-size: 30px;
+  }
+
+  section {
+    position: relative;
+  }
+
+  .text1 h2 {
+    position: absolute;
+    top: 5%;
+    left:50%;
+    transform: translateX(-50%);
+    color: #555251;
+    font-size: 13px;
+  }
+/* Text goes over h2 */
+   .text1 p{
+    box-sizing: border-box;
+    width:100%;
+    height: 200px;
+    padding:  50px 50px 0 35px;
+    font-size: 0.5rem;
+    overflow: scroll;
+  }
+  /* Second Part
+  Solution for this one is also absolute and relative*/
+
+
+  .container.history h2 {
+    font-size: 15px;
+    background-attachment: none;
+
+  }
+
+  .btn {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+
+  /* Third Part */
+
+
+  .container.night h2 {
+    font-size: 15px;
+    background-attachment: none;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+  .row i {
+    font-size: 15px;
+    padding-left: 0;
+    padding-bottom: 15px;
+  }
+  .row h3 {
+    text-align: left;
+    padding-bottom: 35px;
+    font-size: 15px;
+  }
+  .row p {
+    font-size: 10px;
+  }
+  footer {
+    padding-top: 15px;
+    font-size: 15px;
+  }
+}
